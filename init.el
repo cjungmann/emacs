@@ -78,6 +78,11 @@
   (highlight-regexp "<xsl:template" 'show-paren-mismatch))
 (add-hook 'nxml-mode-hook 'xsl_highlight_templates)
 
+(require 'man)
+(set-face-attribute 'Man-overstrike nil :inherit 'bold :foreground "brightcyan")
+(set-face-attribute 'Man-underline nil :inherit 'underline :foreground "brightgreen")
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
